@@ -9,8 +9,8 @@ const Header = ({ getQuery }) => {
     }
     
     return (
-        <header>
-            <h1>MovieDB</h1>
+        <header id="top">
+            <a href="#top"><h1>MovieDB</h1></a>
             <form>
                 <input 
                     type='text' 
