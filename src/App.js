@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Header from './components/Header';
 import MovieContainer from './components/MovieContainer';
+import Topic from './components/Topic';
 require('dotenv').config();
 
 const API_KEY = process.env.REACT_APP_API_KEY
@@ -38,6 +39,7 @@ const App = () => {
   return (
     <div className="container">
       <Header getQuery={ (q) => setQuery(q) }></Header>
+      <Topic></Topic>
       <MovieContainer isLoading={ isLoading } movie={ movie }/>
     </div>
   );
