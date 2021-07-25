@@ -25,6 +25,7 @@ header {
   align-items: center;
 }
 header input {
+  min-width: 100px;
   height: 3em;
   padding-left: 1em;
   border-radius: 1em;
@@ -32,6 +33,17 @@ header input {
   -moz-border-radius: 1em;
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
+}
+@media screen and (max-width: 850px) {
+    .genre {
+    display: none;
+  }
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .topic {
   margin-top: 6em;

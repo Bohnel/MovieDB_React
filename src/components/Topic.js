@@ -1,9 +1,16 @@
 import React from 'react'
 
-const Topic = () => {
+const Topic = ({topic}) => {
     return (
         <div className="topic">
-            <h1>Popular</h1>
+            <h1>{{
+                    '28': "Action",
+                    "35": "Comedy",
+                    "18": "Drama",
+                    "1": "Popular",
+                    "2": "Search"
+                }[topic]}       
+            </h1>
         </div>
     )
 }
